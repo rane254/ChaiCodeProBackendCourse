@@ -14,9 +14,9 @@ const server = http.createServer((req, res) => {
     res.setHeader("Content-Type", "text/plain");
     res.end("Hello Welcome to login page!\n");
   } else {
-    res.statusCode = 200;
+    res.statusCode = 404;
     res.setHeader("Content-Type", "text/plain");
-    res.end("Page not found!\n");
+    res.end("404 not found!\n");
   }
 });
 
